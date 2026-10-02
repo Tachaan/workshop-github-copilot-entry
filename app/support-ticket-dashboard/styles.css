@@ -1,0 +1,232 @@
+:root {
+  color: #172033;
+  background: #f4f6fa;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.workshop-links {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 16px 24px 0;
+}
+
+.workshop-links a {
+  color: #3457d5;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 36px 0 60px;
+}
+
+header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+h1 {
+  margin: 2px 0 0;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.eyebrow,
+.updated {
+  margin: 0;
+  color: #667085;
+}
+
+.eyebrow {
+  color: #3457d5;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.summary article {
+  padding: 18px;
+  border: 1px solid #dde2eb;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(23 32 51 / 5%);
+}
+
+.summary span {
+  display: block;
+  color: #667085;
+  font-size: 0.84rem;
+}
+
+.summary strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 1.8rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+label {
+  color: #475467;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 7px;
+  padding: 10px 12px;
+  border: 1px solid #cbd2df;
+  border-radius: 8px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+}
+
+input:focus,
+select:focus {
+  border-color: #3457d5;
+  outline: 3px solid rgb(52 87 213 / 15%);
+}
+
+.ticket-list {
+  display: grid;
+  gap: 12px;
+}
+
+.ticket {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px 24px;
+  padding: 20px;
+  border: 1px solid #dde2eb;
+  border-left: 5px solid #8b96a8;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.ticket.overdue {
+  border-left-color: #e0a800;
+  background: #fff8d9;
+}
+
+.ticket h2 {
+  margin: 6px 0;
+  font-size: 1.08rem;
+}
+
+.ticket p {
+  margin: 0;
+  color: #596579;
+  line-height: 1.5;
+}
+
+.ticket-id {
+  color: #7b8494;
+  font-size: 0.78rem;
+}
+
+.badges {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  gap: 8px;
+}
+
+.badge {
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #edf0f5;
+  color: #344054;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.priority-high {
+  background: #fee4e2;
+  color: #b42318;
+}
+
+.priority-medium {
+  background: #fef0c7;
+  color: #93370d;
+}
+
+.priority-low {
+  background: #dcfae6;
+  color: #067647;
+}
+
+.ticket-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding-top: 12px;
+  border-top: 1px solid #edf0f5;
+  color: #667085;
+  font-size: 0.82rem;
+}
+
+.empty {
+  padding: 36px;
+  border: 1px dashed #b8c0ce;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket {
+    grid-template-columns: 1fr;
+  }
+
+  .badges {
+    justify-content: start;
+  }
+}

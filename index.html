@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Copilot ハンズオン</title>
+<meta name="description" content="既存コードの理解、仕様整理、ドキュメント化、リファクタリングを60分で体験するGitHub Copilotハンズオンです。">
+<link rel="stylesheet" href="assets/site.css?v=1">
+<script src="assets/site.config.js?v=1" defer></script>
+<script src="assets/site.js?v=1" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" id="brand" href="#handson/README.md" aria-label="GitHub Copilot ハンズオン ホーム">
+    <span class="brand-code" id="brand-code">COP / 60</span>
+    <span id="brand-name">GitHub Copilot ハンズオン</span>
+  </a>
+  <div class="topbar-actions" id="topbar-actions" aria-label="関連リンク"></div>
+</header>
+
+<div class="layout">
+  <nav class="steps" aria-label="Overview、受講前準備、セッション一覧">
+    <div class="nav-heading">
+      <p class="eyebrow" id="nav-eyebrow">Workshop Agenda</p>
+      <h1 id="nav-title">Overview / S1-S5</h1>
+      <p id="nav-description">既存コードを題材に、理解・仕様整理・ドキュメント化・リファクタリングを60分で体験します。</p>
+    </div>
+    <ol id="agenda-nav"></ol>
+    <div class="side-card">
+      <b id="side-card-label">所要時間</b>
+      <span id="side-card-value">60 min</span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="progress" aria-hidden="true"><div id="progress-bar"></div></div>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow" id="page-label">Overview</p>
+        <h2 id="page-title">GitHub Copilot ハンズオン</h2>
+        <p class="lead" id="page-summary">GitHub Copilot利用の最初の一歩を、60分で一巡します。</p>
+      </div>
+      <div class="hero-signature" id="hero-signature">
+        <span class="hero-signature-label" id="hero-signature-label">GitHub Copilot Workshop</span>
+        <div class="hero-signature-code">
+          <strong id="hero-signature-code">COP</strong>
+          <b id="hero-signature-sequence">60</b>
+        </div>
+        <span class="hero-signature-edition" id="hero-signature-edition">2026 / Entry</span>
+      </div>
+      <div class="timeline" id="timeline" aria-label="ページ構成"></div>
+      <div class="completion" id="page-completion" hidden>
+        <span>完了条件</span>
+        <p id="page-completion-text"></p>
+      </div>
+    </section>
+
+    <article class="markdown-panel" id="doc-content" aria-live="polite" aria-busy="true">
+      <div class="loading-card">
+        <b>ページを読み込んでいます...</b>
+        <span>Markdown教材を取得しています。</span>
+      </div>
+    </article>
+
+    <div class="nav-btns" aria-label="ページ移動">
+      <button class="nav ghost" id="prev" type="button">← 前へ</button>
+      <a class="source-link" id="source-link" href="handson/README.md">Markdown を直接開く</a>
+      <button class="nav" id="next" type="button">次へ →</button>
+    </div>
+  </main>
+</div>
+</body>
+</html>

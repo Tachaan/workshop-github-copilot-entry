@@ -1,0 +1,22 @@
+{
+  "name": "workshop-github-copilot-entry",
+  "version": "1.0.0",
+  "private": true,
+  "description": "60-minute GitHub Copilot workshop materials and Support Ticket Dashboard",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "app": "node scripts/serve-local.mjs",
+    "test": "node --test",
+    "slides": "slidev slides/slides.md --open",
+    "slides:build": "slidev build slides/slides.md --base ./ --out ../dist/slidev",
+    "slides:export": "slidev export slides/slides.md --output dist/github-copilot-entry-workshop.pdf --timeout 120000"
+  },
+  "engines": {
+    "node": ">=20.12.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.18.0",
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.61.1"
+  }
+}
