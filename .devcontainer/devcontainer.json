@@ -1,0 +1,16 @@
+{
+  "name": "GitHub Copilot Entry Workshop",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "postStartCommand": "if ! curl --fail --silent http://127.0.0.1:8000/ > /dev/null; then nohup npm run app > /tmp/workshop-app.log 2>&1 & fi",
+  "forwardPorts": [
+    8000
+  ],
+  "portsAttributes": {
+    "8000": {
+      "label": "Workshop (local)",
+      "onAutoForward": "openBrowser",
+      "protocol": "http",
+      "visibility": "private"
+    }
+  }
+}

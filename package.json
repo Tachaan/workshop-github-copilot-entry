@@ -1,0 +1,14 @@
+{
+  "name": "workshop-github-copilot-entry",
+  "version": "1.0.0",
+  "private": true,
+  "description": "60-minute GitHub Copilot workshop materials and Support Ticket Dashboard",
+  "license": "MIT",
+  "scripts": {
+    "app": "npx --yes http-server . -a 0.0.0.0 -p 8000 -c-1",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.12.0"
+  }
+}
